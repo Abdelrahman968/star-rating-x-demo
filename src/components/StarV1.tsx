@@ -64,7 +64,7 @@ function ExampleCard({
   code: string;
 }) {
   return (
-    <div className="rounded-2xl border border-white/10 bg-white/[0.03] overflow-hidden">
+    <div className="rounded-2xl border border-white/10 bg-white/3 overflow-hidden">
       <div className="p-6 border-b border-white/10">
         <p className="text-xs font-bold uppercase tracking-widest text-slate-500 mb-1">
           {title}
@@ -73,7 +73,7 @@ function ExampleCard({
       </div>
       <div className="flex flex-col md:flex-row">
         {/* Preview */}
-        <div className="flex-1 flex items-center justify-center p-8 bg-white/[0.02] min-h-[100px]">
+        <div className="flex-1 flex items-center justify-center p-8 bg-white/2 min-h-[100px]">
           {preview}
         </div>
         {/* Code */}
@@ -136,7 +136,7 @@ export default function Star() {
           </div>
 
           <h1 className="text-5xl md:text-7xl font-black tracking-tight mb-4 leading-none">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-orange-400 to-yellow-300">
+            <span className="text-transparent bg-clip-text bg-linear-to-r from-amber-300 via-orange-400 to-yellow-300">
               star-rating-x
             </span>
           </h1>
@@ -201,7 +201,7 @@ function App() {
             ).map((th) => (
               <div
                 key={th}
-                className="flex items-center justify-between px-5 py-4 rounded-xl border border-white/10 bg-white/[0.03] hover:bg-white/[0.06] transition-colors"
+                className="flex items-center justify-between px-5 py-4 rounded-xl border border-white/10 bg-white/3 hover:bg-white/6 transition-colors"
               >
                 <span className="text-sm font-semibold text-slate-300 capitalize">
                   {th}
@@ -246,7 +246,7 @@ function App() {
             ).map((sh) => (
               <div
                 key={sh}
-                className="flex flex-col items-center gap-3 py-5 px-3 rounded-xl border border-white/10 bg-white/[0.03]"
+                className="flex flex-col items-center gap-3 py-5 px-3 rounded-xl border border-white/10 bg-white/3"
               >
                 <StarRating
                   defaultValue={3}
@@ -277,7 +277,7 @@ function App() {
             {(["bounce", "pulse", "wiggle", "pop"] as const).map((anim) => (
               <div
                 key={anim}
-                className="flex items-center justify-between px-5 py-4 rounded-xl border border-white/10 bg-white/[0.03]"
+                className="flex items-center justify-between px-5 py-4 rounded-xl border border-white/10 bg-white/3"
               >
                 <span className="text-sm font-semibold text-slate-400 capitalize">
                   {anim}
@@ -565,13 +565,13 @@ function ProductRating() {
         <section>
           <SectionTitle tag="12 · States">Disabled State</SectionTitle>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-            <div className="flex flex-col items-center gap-3 p-6 rounded-xl border border-white/10 bg-white/[0.03]">
+            <div className="flex flex-col items-center gap-3 p-6 rounded-xl border border-white/10 bg-white/3">
               <span className="text-xs text-slate-500 uppercase tracking-widest font-semibold">
                 Normal
               </span>
               <StarRating defaultValue={3} count={5} size={28} theme="violet" />
             </div>
-            <div className="flex flex-col items-center gap-3 p-6 rounded-xl border border-white/10 bg-white/[0.03]">
+            <div className="flex flex-col items-center gap-3 p-6 rounded-xl border border-white/10 bg-white/3">
               <span className="text-xs text-slate-500 uppercase tracking-widest font-semibold">
                 Disabled
               </span>
