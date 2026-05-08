@@ -3,9 +3,9 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
-  title: "star-rating-x",
+  title: "Star Rating X - NPM Library",
   description:
-    "Comprehensive release history and changelog for star-rating-x, the feature-rich, accessible, and themeable React rating component.",
+    "Comprehensive release history and changelog for Star Rating X, the feature-rich, accessible, and themeable React rating component.",
   keywords: [
     "react",
     "rating",
